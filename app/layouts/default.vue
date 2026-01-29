@@ -4,6 +4,10 @@ import Button from '~/components/Button.vue';
 
 const route = useRoute()
 
+const device = useDevice();
+
+console.log('Is Mobile:', device.isMobile);
+
 const items = computed<NavigationMenuItem[]>(() => [
 	{
 		label: 'Home',
@@ -153,6 +157,12 @@ const items = computed<NavigationMenuItem[]>(() => [
 					Watch Live
 				</Button>
 			</template>
+
+			<template #body>
+				<div class="w-full flex">
+					<UNavigationMenu :items="items" orientation="vertical" class="w-full" />
+				</div>
+			</template>
 		</UHeader>
 
 		<main>
@@ -168,17 +178,17 @@ const items = computed<NavigationMenuItem[]>(() => [
 				</div>
 			</template>
 
-			<UNavigationMenu :items="items" variant="link" />
+			<UNavigationMenu :items="items" :orientation="device.isMobile ? 'vertical' : 'horizontal'" variant="link" />
 
 			<template #right>
 				<div class="flex flex-col">
 					<div>
-						<UButton icon="i-simple-icons-facebook" color="neutral" variant="ghost" to="https://go.nuxt.com/discord"
-							target="_blank" aria-label="Discord" />
-						<UButton icon="i-simple-icons-x" color="neutral" variant="ghost" to="https://go.nuxt.com/x" target="_blank"
-							aria-label="X" />
-						<UButton icon="i-simple-icons-tiktok" color="neutral" variant="ghost" to="https://github.com/nuxt/nuxt"
-							target="_blank" aria-label="GitHub" />
+						<UButton icon="i-simple-icons-facebook" color="neutral" variant="ghost"
+							to="https://go.nuxt.com/discord" target="_blank" aria-label="Discord" />
+						<UButton icon="i-simple-icons-x" color="neutral" variant="ghost" to="https://go.nuxt.com/x"
+							target="_blank" aria-label="X" />
+						<UButton icon="i-simple-icons-tiktok" color="neutral" variant="ghost"
+							to="https://github.com/nuxt/nuxt" target="_blank" aria-label="GitHub" />
 					</div>
 					<Button to="/watch" class="mt-4">
 						Watch Live
@@ -189,7 +199,8 @@ const items = computed<NavigationMenuItem[]>(() => [
 
 			<template #bottom>
 				<USeparator class="my-6 dark:border-slate-700 dark:border" />
-				<p class="text-muted text-sm text-center">Copyright © {{ new Date().getFullYear() }} Agape Reaching People
+				<p class="text-muted text-sm text-center">Copyright © {{ new Date().getFullYear() }} Agape Reaching
+					People
 					Ministry La
 					Trinidad</p>
 			</template>

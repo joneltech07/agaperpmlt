@@ -1,7 +1,7 @@
 <template>
-    <div class="text-center flex flex-col items-center gap-4">
-        <div class="overflow-hidden rounded-2xl shadow-xl">
-            <img class="w-80 h-80 w-full object-cover" :src="props.src" :alt="props.alt">
+    <div class="w-full md:w-80 h-95 text-center flex flex-col items-center gap-4">
+        <div class="overflow-hidden rounded-2xl w-full h-full shadow-xl">
+            <img class=" w-full object-cover" :src="props.src" :alt="props.alt">
         </div>
 
         <div>
