@@ -135,24 +135,6 @@ const items = computed<NavigationMenuItem[]>(() => [
 	}
 ]);
 
-const footerItems: NavigationMenuItem[] = [
-	{
-		label: 'Figma Kit',
-		to: 'https://go.nuxt.com/figma-ui',
-		target: '_blank'
-	},
-	{
-		label: 'Playground',
-		to: 'https://stackblitz.com/edit/nuxt-ui',
-		target: '_blank'
-	},
-	{
-		label: 'Releases',
-		to: 'https://github.com/nuxt/ui/releases',
-		target: '_blank'
-	}
-]
-
 </script>
 
 <template>
@@ -167,15 +149,9 @@ const footerItems: NavigationMenuItem[] = [
 			<template #right>
 				<UColorModeButton />
 
-				<!-- <UTooltip text="Open on GitHub" :kbds="['meta', 'G']">
-					<UButton color="neutral" variant="ghost" to="https://github.com/nuxt/ui" target="_blank"
-						icon="i-simple-icons-github" aria-label="GitHub" />
-				</UTooltip> -->
-
 				<Button to="/give" class="ml-4 max-md:hidden">
 					Watch Live
 				</Button>
-
 			</template>
 		</UHeader>
 
