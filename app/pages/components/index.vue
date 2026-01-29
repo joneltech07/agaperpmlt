@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Button from '~/components/Button.vue'
+import Card from '~/components/Card.vue';
 </script>
 
 <template>
@@ -17,14 +18,24 @@ import Button from '~/components/Button.vue'
         </template>
       </CallToAction>
 
-      <Button class="rounded-xl">
+      <Button>
         <template #icon>
           <img src="/logo.png" alt="Logo" class="h-5 w-5" />
         </template>
         Click Me
       </Button>
-      
+
       <!-- TODO:Create Card -->
+
+      <Card image-background="/images/sunday_service.jpg" visit-link="/#">
+        <template #title>
+          Card Title
+        </template>
+        <template #description>
+          This is a sample card description.
+        </template>
+      </Card>
+
     </div>
   </div>
 </template>

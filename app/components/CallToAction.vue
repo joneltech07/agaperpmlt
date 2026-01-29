@@ -1,10 +1,10 @@
 <template>
   <div
-    class="flex flex-col p-2 rounded-2xl overflow-hidden relative dark:border w-full md:w-80 min-h-90 bg-primary shadow-lg dark:shadow-none">
-    <div class="w-full h-full absolute bottom-0 left-0 right-0 bg-cover bg-center opacity-50"
+    class="flex flex-col justify-end p-2 rounded-2xl overflow-hidden relative dark:border w-full md:w-80 min-h-90 bg-primary shadow-lg dark:shadow-none">
+    <div class="w-full h-full absolute bottom-0 left-0 right-0 bg-cover bg-center z-10 opacity-50 hover:scale-110 transition"
       :style="{ backgroundImage: `url(${props.imageBackground})` }"></div>
 
-    <div class="p-2 relative flex-1 flex flex-col gap-4 justify-end text-white">
+    <div class="p-2 relative flex flex-col gap-4 justify-end text-white z-20">
       <div>
         <h3 class="text-2xl font-bold text-shadow-md">
           <slot name="title">
