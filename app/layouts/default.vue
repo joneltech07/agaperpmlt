@@ -184,13 +184,11 @@ const footerItems: NavigationMenuItem[] = [
 		</main>
 
 
-		<UFooter class="bg-primary/10 dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 pb-40">
+		<UFooter class="bg-primary/10 dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 pb-20">
 			<template #left>
 				<div class="flex flex-col items-center space-y-2">
 					<Logo class="h-40 w-auto" />
-					<p class="text-2xl font-weight-bold">AGAPE</p>
-					<p class="text-muted text-sm text-center">© {{ new Date().getFullYear() }} Agape Reaching People Ministry La
-						Trinidad</p>
+					<p class="text-5xl font-poppins text-shadow-sm text-primary">AGAPE</p>
 				</div>
 			</template>
 
@@ -210,6 +208,14 @@ const footerItems: NavigationMenuItem[] = [
 						Watch Live
 					</Button>
 				</div>
+			</template>
+
+
+			<template #bottom>
+				<USeparator class="my-6 dark:border-slate-700 dark:border" />
+				<p class="text-muted text-sm text-center">Copyright © {{ new Date().getFullYear() }} Agape Reaching People
+					Ministry La
+					Trinidad</p>
 			</template>
 		</UFooter>
 	</div>
