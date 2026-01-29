@@ -12,7 +12,7 @@ import Banner from '~/components/Banner.vue';
                 <Image src="/images/james.jpg" alt="Pastor James" name="James" position="Senior Pastor" />
                 <Image src="/images/jerome.jpg" alt="Pastor Jerome" name="Jerome" position="Bishop" />
                 <Image src="/images/maxson.jpg" alt="Maxson" name="Maxson" position="Prophet" />
-                <Image src="/images/gary.jpg" alt="Gary" name="Gary" position="Agape Limitless Pastor" />
+                <Image src="/images/gary.png" alt="Gary" name="Gary" position="Agape Limitless Pastor" />
                 <Image src="/images/jonel.jpg" alt="Jonel" name="Jonel" position="Assistant" />
             </div>
         </div>
