@@ -3,6 +3,8 @@
 
 @theme static {
   --color-primary: #d3a438;
+  --color-primary-light: #f3e2a9;
+  --color-primary-dark: #a67c2a;
   --color-secondary-light: #2f2a1f;
   --color-secondary-dark: #0f0e0b;
   --color-surface-light: #ffffff;
