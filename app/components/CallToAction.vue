@@ -20,7 +20,7 @@
 
       <div>
         <div
-          class="p-2 px-5 rounded-xl border-2 w-auto inline-block bg-white/20 hover:bg-white/30 transition">
+          class="p-2 px-5 rounded-xl border-2 dark:border-primary w-auto inline-block bg-white/20 hover:bg-white/30 dark:bg-primary/20 dark:hover:bg-primary/30 transition">
           <a href="https://example.com" target="_blank">
             <slot name="button-text"> Get Started </slot>
           </a>
