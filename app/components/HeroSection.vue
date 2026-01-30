@@ -8,7 +8,6 @@
                 Loving God • Loving People
             </span>
         </h1>
-
     </div>
 </template>
 

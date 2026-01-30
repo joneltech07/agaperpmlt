@@ -33,6 +33,11 @@ const items = computed<NavigationMenuItem[]>(() => [
 				label: 'Leadership',
 				to: '/about/leadership',
 				active: route.path === '/about/leadership'
+			},
+			{
+				label: 'Mission & Vision',
+				to: '/about/mission-vision',
+				active: route.path === '/about/mission-vision'
 			}
 		]
 	},
@@ -100,8 +105,8 @@ const items = computed<NavigationMenuItem[]>(() => [
 		children: [
 			{
 				label: 'Cellgroups',
-				to: '/community/cell-groups',
-				active: route.path === '/community/cell-groups'
+				to: '/community/cellgroups',
+				active: route.path === '/community/cellgroups'
 			},
 			{
 				label: 'NightLife',
