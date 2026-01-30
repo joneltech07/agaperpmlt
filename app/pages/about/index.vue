@@ -1,7 +1,7 @@
 <template>
 
-  <div class="p-30 flex justify-center">
-    <div class="flex flex-wrap gap-3 w-full px-30">
+  <div class="p-4 py-20 md:p-10 flex justify-center">
+    <div class="flex flex-wrap justify-evenly w-full md:px-30">
       <CallToAction image-background="/images/sunday_service.jpg">
         <template #title>
           OUR STORY
