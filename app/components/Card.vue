@@ -1,6 +1,6 @@
 <template>
 	<a :href="visitLink"
-		class="flex flex-col rounded-2xl overflow-hidden dark:border w-full md:w-95 min-h-50 shadow-lg dark:shadow-none hover:shadow-2xl transition-shadow duration-300 bg-white dark:bg-slate-800 border-slate-200 hover:cursor-pointer dark:hover:border-primary">
+		class="flex flex-col rounded-2xl overflow-hidden dark:border dark:border-primary w-full md:w-95 min-h-50 shadow-lg dark:shadow-none hover:shadow-2xl transition-shadow duration-300 bg-white dark:bg-slate-800 border-slate-200 hover:cursor-pointer dark:hover:border-primary">
 
 		<div class="h-45 w-full overflow-hidden">
 			<div class="h-full w-full bg-cover bg-center hover:scale-110 transition"
