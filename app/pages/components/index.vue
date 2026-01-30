@@ -36,8 +36,6 @@ import Card from '~/components/Card.vue';
         </template>
       </Card>
 
-      <image src="/images/hero1.jpg" alt="Pastors" class="h-32 w-32 z-10" />
-
     </div>
   </div>
 </template>
