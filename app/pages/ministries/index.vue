@@ -2,8 +2,8 @@
 
 	<Banner title="GET INVOLVED" />
 
-	<div class="p-4 py-20 md:p-10 flex justify-center">
-		<div class="flex flex-wrap justify-evenly w-full md:px-30">
+	<div class="p-10 flex justify-center">
+		<div class="flex flex-wrap gap-4 justify-evenly w-full md:px-30">
 			<CallToAction image-background="/images/missions.jpg">
 				<template #title>
 					Missions
