@@ -2,8 +2,8 @@
 	<Banner title="FIND COMMUNITY" />
 
 	<div class="p-7 md:p-10 flex justify-center">
-		<div class="flex flex-wrap gap-4 justify-center w-full md:px-5 lg:px-30">
-			<CallToAction class="md:w-70" v-for="value in callToActionItems" :key="value.title" :image-background="value.imageBackground">
+		<div class="flex flex-wrap gap-4 justify-stretch w-full md:px-5 lg:px-30">
+			<CallToAction class="grow" v-for="value in callToActionItems" :key="value.title" :image-background="value.imageBackground">
 				<template #title>
 					{{ value.title }}
 				</template>
