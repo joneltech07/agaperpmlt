@@ -20,8 +20,8 @@ const props = defineProps({
 
 <style scoped>
 div {
-    padding-top: 128px;
-    padding-bottom: 128px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 @media (max-width: 768px) {
