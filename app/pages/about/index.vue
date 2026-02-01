@@ -1,8 +1,8 @@
 <template>
 
   <div class="p-7 md:p-10 flex justify-center">
-    <div class="flex flex-wrap gap-4 justify-evenly w-full md:px-30">
-      <CallToAction v-for="value in callToActionItems" :key="value.title" :image-background="value.imageBackground">
+    <div class="flex flex-wrap gap-4 justify-center w-full md:px-10 lg:px-30">
+      <CallToAction class="md:w-60" v-for="value in callToActionItems" :key="value.title" :image-background="value.imageBackground">
         <template #title>
           {{ value.title }}
         </template>
@@ -37,7 +37,7 @@ const callToActionItems = [
 	},
 	{
 		title: 'Mission & Vision',
-		description: 'Out mission, vision, and values',
+		description: 'Our mission, vision, and values',
 		imageBackground: '/images/facilitation.jpg',
 		link: '/about/mission-vision'
 	}

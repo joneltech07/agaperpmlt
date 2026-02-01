@@ -107,6 +107,11 @@ const items = computed<NavigationMenuItem[]>(() => [
 				label: 'Cellgroups',
 				to: '/community/cellgroups',
 				active: route.path === '/community/cellgroups'
+			},
+			{
+				label: 'Volunteer Opportunities',
+				to: '/community/volunteers',
+				active: route.path === '/community/volunteers'
 			}
 		]
 	},
