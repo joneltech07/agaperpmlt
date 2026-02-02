@@ -177,32 +177,35 @@ const items = computed<NavigationMenuItem[]>(() => [
 				</div>
 			</template>
 
-			<UNavigationMenu class="block md:hidden" :items="items" orientation="vertical" variant="link" />
-			<UNavigationMenu class="hidden md:block" :items="items" orientation="horizontal" variant="link" />
+			<div class="flex flex-col gap-4">
+				<UNavigationMenu class="block md:hidden" :items="items" orientation="vertical" variant="link" />
+				<UNavigationMenu class="hidden md:block" :items="items" orientation="horizontal" variant="link" />
+				<div class="text-center">
+					<p class="text-lg font-bold">Email Us</p>
+					<p>agaperpmlatrinidad@gmail.com</p>
+				</div>
+				<div class="text-center">
+					<p class="text-lg font-bold">Find Us</p>
+					<p>JC065 PICO, KM.5, La Trinidad, Benguet</p>
+				</div>
+				<p class="text-muted text-sm text-center">Copyright © {{ new Date().getFullYear() }} Agape Reaching
+					People Ministry La Trinidad</p>
+			</div>
 
 			<template #right>
 				<div class="flex flex-col">
 					<div>
-						<UButton icon="i-simple-icons-facebook" color="neutral" variant="ghost" to="https://www.facebook.com/arpmbenguetph"
-							target="_blank" aria-label="Facebook" />
-						<UButton icon="i-simple-icons-x" color="neutral" variant="ghost" to="https://go.nuxt.com/x" target="_blank"
-							aria-label="X" />
-						<UButton icon="i-simple-icons-tiktok" color="neutral" variant="ghost" to="https://github.com/nuxt/nuxt"
-							target="_blank" aria-label="GitHub" />
+						<UButton icon="i-simple-icons-facebook" color="neutral" variant="ghost"
+							to="https://www.facebook.com/arpmbenguetph" target="_blank" aria-label="Facebook" />
+						<UButton icon="i-simple-icons-x" color="neutral" variant="ghost" to="https://go.nuxt.com/x"
+							target="_blank" aria-label="X" />
+						<UButton icon="i-simple-icons-tiktok" color="neutral" variant="ghost"
+							to="https://github.com/nuxt/nuxt" target="_blank" aria-label="GitHub" />
 					</div>
 					<Button to="/watch" class="mt-4">
 						Watch Live
 					</Button>
 				</div>
-			</template>
-
-
-			<template #bottom>
-				<USeparator class="my-6 dark:border-slate-700 dark:border" />
-				<p class="text-muted text-sm text-center">Copyright © {{ new Date().getFullYear() }} Agape Reaching
-					People
-					Ministry La
-					Trinidad</p>
 			</template>
 		</UFooter>
 	</div>
