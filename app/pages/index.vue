@@ -11,8 +11,12 @@
 import { useHead, useRuntimeConfig } from '#app';
 
 const runtimeConfig = useRuntimeConfig();
+
 // Assuming your website URL is set in runtimeConfig.public.baseURL
-const websiteBaseURL = runtimeConfig.public.baseURL || 'https://agaperpmlt.vercel.app'; 
+
+// console.log('Runtime Config:', runtimeConfig.public.baseURL);
+
+const websiteBaseURL = 'https://agaperpmlt.vercel.app'; 
 const imageUrl = `${websiteBaseURL}/images/agape.jpg`;
 
 useHead({
