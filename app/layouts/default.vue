@@ -177,14 +177,14 @@ const items = computed<NavigationMenuItem[]>(() => [
 				</div>
 			</template>
 
-			<UNavigationMenu class="visible md:invisible" :items="items" orientation="vertical" variant="link" />
-			<UNavigationMenu class="invisible md:visible" :items="items" orientation="horizontal" variant="link" />
+			<UNavigationMenu class="block md:hidden" :items="items" orientation="vertical" variant="link" />
+			<UNavigationMenu class="hidden md:block" :items="items" orientation="horizontal" variant="link" />
 
 			<template #right>
 				<div class="flex flex-col">
 					<div>
-						<UButton icon="i-simple-icons-facebook" color="neutral" variant="ghost" to="https://go.nuxt.com/discord"
-							target="_blank" aria-label="Discord" />
+						<UButton icon="i-simple-icons-facebook" color="neutral" variant="ghost" to="https://www.facebook.com/arpmbenguetph"
+							target="_blank" aria-label="Facebook" />
 						<UButton icon="i-simple-icons-x" color="neutral" variant="ghost" to="https://go.nuxt.com/x" target="_blank"
 							aria-label="X" />
 						<UButton icon="i-simple-icons-tiktok" color="neutral" variant="ghost" to="https://github.com/nuxt/nuxt"
