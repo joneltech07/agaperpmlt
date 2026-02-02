@@ -12,7 +12,7 @@
 						Components
 					</slot>
 				</h3>
-				<p class="text-shadow-lg">
+				<p class="text-shadow-lg text-sm/4">
 					<slot name="description">
 						Call to Action
 					</slot>

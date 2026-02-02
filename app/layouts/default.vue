@@ -6,8 +6,6 @@ const route = useRoute()
 
 const device = useDevice();
 
-console.log('Is Mobile:', device.isMobile);
-
 const items = computed<NavigationMenuItem[]>(() => [
 	{
 		label: 'Home',
@@ -170,6 +168,7 @@ const items = computed<NavigationMenuItem[]>(() => [
 		</main>
 
 
+		<!-- Footer -->
 		<UFooter class="bg-primary/10 dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 pb-20">
 			<template #left>
 				<div class="flex flex-col items-center space-y-2">
@@ -178,7 +177,8 @@ const items = computed<NavigationMenuItem[]>(() => [
 				</div>
 			</template>
 
-			<UNavigationMenu :items="items" :orientation="device.isMobile ? 'vertical' : 'horizontal'" variant="link" />
+			<UNavigationMenu class="visible md:invisible" :items="items" orientation="vertical" variant="link" />
+			<UNavigationMenu class="invisible md:visible" :items="items" orientation="horizontal" variant="link" />
 
 			<template #right>
 				<div class="flex flex-col">

@@ -3,7 +3,7 @@
 	<Banner title="GET INVOLVED" />
 
 	<div class="p-7 md:p-10 flex justify-center">
-		<div class="flex flex-wrap gap-4 justify-stretch w-full md:px-5 lg:px-30">
+		<div class="flex flex-wrap gap-4 justify-stretch w-full md:px-3 lg:px-15">
 			<CallToAction class="grow" v-for="value in callToActionItems" :key="value.title" :image-background="value.imageBackground">
 				<template #title>
 					{{ value.title }}
