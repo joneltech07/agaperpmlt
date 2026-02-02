@@ -79,7 +79,7 @@ const callToActionItems = [
 	{
 		title: 'Technical',
 		description: 'Assist with our technical needs during services and events.',
-		// imageBackground: '/images/technical.jpg',
+		imageBackground: '/images/technical.jpg',
 		link: '/ministries/technical'
 	}
 ];
