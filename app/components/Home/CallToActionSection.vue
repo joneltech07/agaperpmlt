@@ -3,9 +3,9 @@
 	<!-- Main Contaier -->
 	<div class="w-full">
 		<!-- Top Info -->
-		<div class="p-3 md:p-5 flex justify-center">
+		<div class="flex justify-center">
 			<div class="flex flex-wrap gap-4 justify-stretch w-full md:px-5 lg:px-15">
-				<CallToAction class="grow" v-for="value in callToActionItems" :key="value.title"
+				<CallToActionCard class="grow" v-for="value in callToActionItems" :key="value.title"
 					:image-background="value.imageBackground">
 					<template #title>
 						{{ value.title }}
@@ -16,13 +16,15 @@
 					<template #button-text>
 						<a :href="value.link"> Learn More </a>
 					</template>
-				</CallToAction>
+				</CallToActionCard>
 			</div>
 		</div>
 	</div>
 </template>
 
 <script setup lang="ts">
+import CallToActionCard from './CallToActionCard.vue';
+
 const callToActionItems = [
 	{
 		title: "I'm New",
