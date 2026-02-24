@@ -8,7 +8,7 @@
 				<div class="text-center">
 					<h2 class="text-xl font-bold">SERVICE TIME</h2>
 					<p class="text-lg font-bold">Sunday Mornings</p>
-					<p>9:30 AM - 12:00 AM</p>
+					<p>9:30 AM - 12:00 PM</p>
 				</div>
 			</div>
 
