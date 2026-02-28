@@ -10,8 +10,8 @@
 		</NuxtImg>
 
 		<div>
-			<p class="font-bold font-poppins text-lg">{{ props.name }}</p>
-			<p>{{ props.position }}</p>
+			<p class="font-bold font-poppins text-sm md:text-lg">{{ props.name }}</p>
+			<p class="text-xs md:text-sm">{{ props.position }}</p>
 		</div>
 	</div>
 </template>
