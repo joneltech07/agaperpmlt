@@ -174,17 +174,17 @@ const staffs = [
 	},
 	{
 		name: 'Arlene P. Diola',
-		position: 'Graphic Designer/SMM',
+		position: 'Graphic Designer, SMM',
 		imgSrc: 'https://avatar.iran.liara.run/public/72'
 	},
 	{
 		name: 'Jerome P. Cabinta',
-		position: 'Graphic Designer/SMM',
+		position: 'Graphic Designer, SMM',
 		imgSrc: 'https://avatar.iran.liara.run/public/47'
 	},
 	{
 		name: 'Eli Jane M. Gomintong',
-		position: 'SMM/Graphic Designer',
+		position: 'SMM, Graphic Designer',
 		imgSrc: 'https://avatar.iran.liara.run/public/75'
 	},
 	{
@@ -194,7 +194,7 @@ const staffs = [
 	},
 	{
 		name: 'Jonel S. Uligan',
-		position: "Full Stack Software Engineer/Software Architect",
+		position: "Full Stack Software Engineer, Software Architect",
 		imgSrc: 'https://avatar.iran.liara.run/public/18'
 	}
 ]
