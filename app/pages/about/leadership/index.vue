@@ -3,10 +3,10 @@
 		<Banner title="LEADERSHIP" />
 
 		<section class="p-7 md:px-20 md:py-10">
-			<LeadersSection title="Pastors" :images="pastors" />
+			<LeadersSection title="Pastors" :images="pastors" styleProp="flex" />
 
 			<UTabs class="mt-10" :items="leadersTab" :ui="{
-				list: 'w-100', // Width of the whole tab container (e.g., w-full, w-auto)
+				list: 'w-full md:w-100', // Width of the whole tab container (e.g., w-full, w-auto)
 				trigger: 'min-w-fit' // Width of each tab button (e.g., w-1/2, w-20, min-w-fit)
 			}">
 				<template #men>
