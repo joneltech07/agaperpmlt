@@ -1,23 +1,25 @@
 <template>
 
-  <div class="p-7 md:p-10 flex justify-center">
-    <div class="flex flex-wrap gap-4 justify-stretch w-full md:px-5 lg:px-15">
-      <CallToActionCard class="grow" v-for="value in callToActionItems" :key="value.title" :image-background="value.imageBackground">
-        <template #title>
-          {{ value.title }}
-        </template>
-        <template #description>
-          {{ value.description }}
-        </template>
-        <template #button-text>
-          <div class="flex items-center">
-            <Icon name="mdi:book" class="h-5 w-5 mr-2" />
-            <a :href="value.link"> Read More </a>
-          </div>
-        </template>
-      </CallToActionCard>
-    </div>
-  </div>
+	<div class="p-7 md:px-10 md:py-20 flex justify-center md:min-h-screen">
+		<div class="flex flex-wrap gap-4 justify-center items-start w-full md:px-5 lg:px-15">
+			<CallToActionCard class="grow" v-for="value in callToActionItems" :key="value.title"
+				:image-background="value.imageBackground">
+				<template #title>
+					{{ value.title }}
+				</template>
+				<template #description>
+					{{ value.description }}
+				</template>
+				<template #button-text>
+					<a :href="value.link">
+						<div class="flex items-center">
+							<Icon name="mdi:book" class="h-5 w-5 mr-2" /> Read More
+						</div>
+					</a>
+				</template>
+			</CallToActionCard>
+		</div>
+	</div>
 
 </template>
 
