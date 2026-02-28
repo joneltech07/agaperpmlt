@@ -1,33 +1,38 @@
 <template>
-    <div class="w-full md:w-80 h-95 text-center flex flex-col items-center gap-4">
-        <div class="overflow-hidden rounded-2xl w-full h-full shadow-xl">
-            <img class=" w-full object-cover" :src="props.src" :alt="props.alt">
-        </div>
+	<div class="text-center flex flex-col items-center gap-4">
+		<NuxtImg :src="props.src" :alt="props.alt" width="200" height="200" :custom="true"
+			v-slot="{ src, isLoaded, imgAttrs }">
+			<!-- Show the actual image when loaded -->
+			<img v-if="isLoaded" v-bind="imgAttrs" :src="src" class="rounded-2xl object-cover" />
 
-        <div>
-            <p class="font-bold font-poppins text-2xl">{{ props.name }}</p>
-            <p>{{ props.position }}</p>
-        </div>
-    </div>
+			<!-- Show a placeholder while loading -->
+			<USkeleton v-else class="w-full aspect-200/200" />
+		</NuxtImg>
+
+		<div>
+			<p class="font-bold font-poppins text-lg">{{ props.name }}</p>
+			<p>{{ props.position }}</p>
+		</div>
+	</div>
 </template>
 
 <script setup lang="ts">
 const props = defineProps({
-    src: {
-        type: String,
-        required: true
-    },
-    alt: {
-        type: String,
-        default: ''
-    },
-    name: {
-        type: String,
-        default: ''
-    },
-    position: {
-        type: String,
-        default: ''
-    },
+	src: {
+		type: String,
+		required: true
+	},
+	alt: {
+		type: String,
+		default: ''
+	},
+	name: {
+		type: String,
+		default: ''
+	},
+	position: {
+		type: String,
+		default: ''
+	},
 });
 </script>
