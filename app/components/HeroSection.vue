@@ -1,5 +1,5 @@
 <template>
-	<div class="h-70 md:h-167.5 p-0 w-full relative bg-primary dark:bg-slate-800">
+	<div class="h-70 md:h-167.5 p-0 w-full relative bg-primary dark:bg-slate-800 overlow-hidden">
 		<img src="/images/agape.jpg" alt="Hero Image" class="w-full h-70 md:h-full object-cover opacity-50 select-none pointer-events-none"
 			draggable="false" ondragstart="return false;" />
 		<div
@@ -11,5 +11,8 @@
 				Loving God • Loving People • Reach the World
 			</p>
 		</div>
+
+		<div class="bg-white h-30 absolute w-full -bottom-2 opacity-80"></div>
+		<div class="blur-xl bg-white h-60 absolute w-full -bottom-2"></div>
 	</div>
 </template>

@@ -189,7 +189,7 @@ const staffs = [
 	},
 	{
 		name: 'Angelito James S. Bustos',
-		position: 'Offensive Security Engineer',
+		position: 'Offensive Security Engineer, Software Architect',
 		imgSrc: 'https://avatar.iran.liara.run/public/32'
 	},
 	{
