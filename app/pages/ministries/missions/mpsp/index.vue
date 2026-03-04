@@ -3,28 +3,8 @@
 		<Banner title="May Pag-asa sa Pagbasa (MPSP)" background-image="/images/missions/mpsp.jpg" />
 
 		<section class="p-7 md:px-20 md:py-20 md:pb-40 pb-10">
-			<h2 class="text-2xl md:text-3xl font-bold mb-4">May Pag-asa sa Pagbasa (MPSP)</h2>
-
 			<div class="flex gap-4 flex-wrap mb-4">
-				<UModal fullscreen v-for="(image, key) in images" :key="key">
-					<NuxtImg :src="image.src" :alt="image.alt" sizes="100vw md:300px" :custom="true"
-						v-slot="{ src, isLoaded, imgAttrs }" @click="select(key)">
-						<!-- Show the actual image when loaded -->
-						<img v-if="isLoaded" v-bind="imgAttrs" :src="src" class="rounded object-cover" />
-						<!-- Show a placeholder while loading -->
-						<USkeleton v-else class="w-full md:w-50 aspect-200/200" />
-					</NuxtImg>
-
-					<template #body>
-						<div class="w-full p-1 md:py-0 md:px-20">
-							<UCarousel v-slot="{ item }" arrows :items="images.map(img => img.src)" :autoplay="false"
-								initial-index="1" class="w-full" :prev="{ onClick: onClickPrev }" :next="{ onClick: onClickNext }"
-								:loop="true">
-								<img :src="images[activeIndex]?.src" class="w-full border rounded-lg" />
-							</UCarousel>
-						</div>
-					</template>
-				</UModal>
+				<ModalCarouselImage :images="images" />
 			</div>
 
 			<p>Driven by a deep compassion for the next generation, our disciples actively partner with local schools to
@@ -36,19 +16,7 @@
 </template>
 
 <script setup lang="ts">
-const activeIndex = ref(0);
-
-function onClickPrev() {
-	activeIndex.value = activeIndex.value <= 0 ? images.length - 1 : activeIndex.value - 1;
-}
-
-function onClickNext() {
-	activeIndex.value = activeIndex.value >= images.length - 1 ? 0 : activeIndex.value + 1;
-}
-
-function select(index: number) {
-	activeIndex.value = index;
-}
+import ModalCarouselImage from '~/components/ModalCarouselImage.vue';
 
 const images = [
 	{
