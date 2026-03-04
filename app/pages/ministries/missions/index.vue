@@ -2,7 +2,7 @@
 	<section>
 		<Banner title="Missions" background-image="/images/missions.jpg" />
 
-		<section class="p-7 md:px-20 md:py-20 md:pb-40">
+		<section class="p-7 md:px-20 md:py-20 md:pb-40 pb-10">
 			<section class="mb-10">
 				<h2 class="text-2xl md:text-3xl font-bold mb-4">Beyond the Walls: Our Mission in the Field</h2>
 				<p>The ministry of the church is not contained within four walls; it is a living mission that extends into the
