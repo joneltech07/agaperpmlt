@@ -5,7 +5,7 @@
 			class="w-full h-full absolute bottom-0 left-0 right-0 bg-cover bg-center z-10 opacity-60 hover:scale-110 transition"
 			:style="{ backgroundImage: `url(${props.imageBackground})` }"></div>
 
-		<div class="p-2 relative flex flex-col gap-4 justify-end text-white z-20">
+		<div class="p-2 relative flex flex-col gap-4 justify-end text-white z-20 bg-primary/70 dark:bg-slate-800/70 rounded-2xl">
 			<div>
 				<h3 class="text-2xl font-bold text-shadow-2xl">
 					<slot name="title">
