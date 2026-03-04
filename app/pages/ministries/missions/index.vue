@@ -2,6 +2,20 @@
 	<section>
 		<Banner title="Missions" />
 
+		<section class="w-full flex flex-col md:flex-row gap-7 md:gap-10 p-7 md:px-20 md:py-10">
+			<CallToActionCard class="grow" v-for="mission in missions" :key="mission.title" :image-background="mission.imageBackground">
+				<template #title>
+					{{ mission.title }}
+				</template>
+				<template #description>
+					{{ mission.description }}
+				</template>
+				<template #button-text>
+					<a :href="mission.link"> Read More </a>
+				</template>
+			</CallToActionCard>
+		</section>
+
 		<section class="p-7 md:px-20 md:py-10">
 			<section class="mb-10">
 				<h2 class="text-2xl md:text-3xl font-bold mb-4">Beyond the Walls: Our Mission in the Field</h2>
@@ -37,3 +51,28 @@
 		</section>
 	</section>
 </template>
+
+<script setup lang="ts">
+import CallToActionCard from '~/components/Home/CallToActionCard.vue';
+
+const missions = [
+	{
+		title: 'May Pag-asa sa Pagbasa',
+		description: 'We partner with local schools to mentor children in literacy, nurturing both academic excellence and spiritual growth through God’s Word.',
+		imageBackground: '/images/missions/mpsp.jpg',
+		link: '/ministries/missions/mpsp'
+	},
+	{
+		title: 'Christians for Nation Building (C4NB)',
+		description: 'We mentor Criminology students in Benguet, raising a generation of law enforcement professionals who lead with integrity and godly character.',
+		imageBackground: '/images/missions/c4nb.jpg',
+		link: '/ministries/missions/c4nb'
+	},
+	{
+		title: 'Bless Our Cops (and Soldiers) Movement',
+		description: 'We provide spiritual support to police officers and soldiers through regular visitation, prayer, and fellowship, equipping them with the strength that only Christ can provide.',
+		imageBackground: '/images/missions/boc.jpg',
+		link: '/ministries/missions/boc'
+	}
+]
+</script>

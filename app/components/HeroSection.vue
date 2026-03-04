@@ -12,7 +12,7 @@
 			</p>
 		</div>
 
-		<div class="bg-white h-30 absolute w-full -bottom-2 opacity-80"></div>
-		<div class="blur-xl bg-white h-60 absolute w-full -bottom-2"></div>
+		<!-- <div class="bg-white h-30 absolute w-full -bottom-2 opacity-80"></div>
+		<div class="blur-xl bg-white h-60 absolute w-full -bottom-2"></div> -->
 	</div>
 </template>

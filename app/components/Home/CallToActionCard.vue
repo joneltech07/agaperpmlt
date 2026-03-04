@@ -7,12 +7,12 @@
 
 		<div class="p-2 relative flex flex-col gap-4 justify-end text-white z-20">
 			<div>
-				<h3 class="text-2xl font-bold text-shadow-md">
+				<h3 class="text-2xl font-bold text-shadow-2xl">
 					<slot name="title">
 						Components
 					</slot>
 				</h3>
-				<p class="text-shadow-lg text-sm/4">
+				<p class="text-shadow-2xl text-sm/4">
 					<slot name="description">
 						Call to Action
 					</slot>
