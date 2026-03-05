@@ -17,7 +17,7 @@
 
 			<!-- Leader Profile Card -->
 
-			<CoordinatorCard name="Jerome Cabinta" role="MPSP Coordinator" area="" image-src="/images/leaders/jerome_cabinta.jpg"
+			<CoordinatorCard name="Jerome Cabinta" role="MPSP Coordinator" area="" imageSrc="/images/leaders/jerome_cabinta.jpg"
 				bio="Jerome is a passionate advocate for literacy and education, dedicating his time to mentoring children in the MPSP program. With a heart for nurturing young minds, he strives to empower the next generation with the gift of reading and comprehension." />
 
 		</section>
