@@ -10,7 +10,7 @@
 
 		<template #body>
 			<div class="w-full p-1 md:py-0 md:px-20">
-				<UCarousel v-slot="{ item }" @select="onSelect" arrows :items="images.map(img => img.src)" :autoplay="false" initial-index="1"
+				<UCarousel v-slot="{ item }" arrows :items="images.map(img => img.src)" :autoplay="false" initial-index="1"
 					class="w-full" :prev="{ onClick: onClickPrev }" :next="{ onClick: onClickNext }" :loop="true">
 					<img :src="images[activeIndex]?.src" class="w-full border rounded-lg" />
 				</UCarousel>
@@ -39,10 +39,6 @@ function onClickNext() {
 }
 
 function select(index: number) {
-	activeIndex.value = index;
-}
-
-function onSelect(index: number) {
 	activeIndex.value = index;
 }
 
