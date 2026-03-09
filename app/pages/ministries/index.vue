@@ -27,8 +27,8 @@ const callToActionItems = [
 	{
 		title: 'LCSOL',
 		description: 'LCSOL description',
-		imageBackground: '/images/missions.jpg',
-		link: '/ministries/missions'
+		imageBackground: '/images/sol.jpg',
+		link: '/ministries/sol'
 	},
 	{
 		title: 'Missions',
