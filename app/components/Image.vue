@@ -1,6 +1,6 @@
 <template>
 	<div class="text-center flex flex-col items-center gap-4 p-0">
-		<NuxtImg :src="props.src" :alt="props.alt" width="200" height="200" :custom="true"
+		<NuxtImg :src="props.src" :alt="props.alt" width="200" height="300" :custom="true"
 			v-slot="{ src, isLoaded, imgAttrs }">
 			<!-- Show the actual image when loaded -->
 			<img v-if="isLoaded" v-bind="imgAttrs" :src="src" class="rounded-2xl object-cover object-center shadow-md" />
