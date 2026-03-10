@@ -3,7 +3,7 @@
 		<NuxtImg :src="props.src" :alt="props.alt" width="200" height="300" :custom="true"
 			v-slot="{ src, isLoaded, imgAttrs }">
 			<!-- Show the actual image when loaded -->
-			<img v-if="isLoaded" v-bind="imgAttrs" width="200" height="300" :src="src" class="rounded-2xl object-cover object-center shadow-md" />
+			<img v-if="isLoaded" v-bind="imgAttrs" :src="src" class="rounded-2xl w-50 h-60 object-cover object-center shadow-md" />
 
 			<!-- Show a placeholder while loading -->
 			<USkeleton v-else class="w-full aspect-200/200" />
