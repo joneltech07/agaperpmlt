@@ -2,7 +2,7 @@
   <div>
     <h2 class="text-2xl font-bold mb-10 text-center">{{ props.header }}</h2>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div :class="`grid grid-cols-1 ${gridCols} gap-4`">
       <div
         v-for="(verse, index) in props.scriptures"
         :key="index"
@@ -20,4 +20,10 @@ const props = defineProps<{
   header: string
   scriptures: { title: string; text: string }[]
 }>()
+
+const gridCols = computed(() => {
+  return props.scriptures.length >= 3 ? 'md:grid-cols-3' : 'md:grid-cols-2'
+})
+
+console.log('Grid Columns:', gridCols.value)
 </script>
