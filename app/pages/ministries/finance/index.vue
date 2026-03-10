@@ -71,5 +71,5 @@ const verses = [
     title: '2 Corinthians 8:7',
     text: '“Since you excel in so many ways in your faith, you gifted speakers, your enthusiasm, and your love from us I want you to excel also in this gracious act of giving.”'
   }
-]
+];
 </script>
