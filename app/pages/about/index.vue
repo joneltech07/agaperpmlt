@@ -36,7 +36,7 @@ const callToActionItems = [
 	{
 		title: 'Leadership',
 		description: 'Meet the Leadership team',
-		imageBackground: '/images/hero3.jpg',
+		imageBackground: '/images/leadership.jpg',
 		link: '/about/leadership'
 	},
 	{
