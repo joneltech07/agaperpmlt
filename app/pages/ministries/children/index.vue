@@ -15,6 +15,8 @@
         future of the Kingdom, we invite you to join our teaching team.
       </p>
 
+			<USeparator />
+
       <!-- Mission & Core Values -->
       <div class="flex flex-wrap gap-4 md:gap-20">
         <div class="w-full md:w-100">
@@ -37,6 +39,8 @@
           </p>
         </div>
       </div>
+
+			<USeparator />
 
       <!-- Verses -->
       <VerseCard header="Biblical Scriptures" :scriptures="scriptures" />
