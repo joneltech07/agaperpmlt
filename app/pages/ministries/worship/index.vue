@@ -48,7 +48,7 @@
             position="Department Head"
           />
           <Image
-            src="/images/profile_placeholder.png"
+            src="logo.png"
             name="John Mar Diola"
             position="Music Director"
           />

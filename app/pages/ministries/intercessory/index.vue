@@ -38,7 +38,7 @@ import Image from '~/components/Image.vue';
 				<h2 class="text-2xl font-bold mb-10 text-center">MEET THE TEAM</h2>
 				<div class="flex flex-col md:flex-row gap-4 md:gap-20 justify-center">
 					<Image src="/images/leaders/nova_tobyagon.jpg" name="Nova Tobyagon" position="Department Head" />
-					<Image src="/images/profile_placeholder.png" name="Alester Uligan" position="Assistant" />
+					<Image src="logo.png" name="Alester Uligan" position="Assistant" />
 				</div>
 			</div>
 		</section>

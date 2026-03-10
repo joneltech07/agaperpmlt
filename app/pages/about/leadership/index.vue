@@ -44,7 +44,7 @@ const pastors = [
   {
     name: 'Juanito Ricardo Jr.',
     position: 'Senior Pastor',
-    imgSrc: '/images/profile_placeholder.png'
+    imgSrc: 'logo.png'
   },
   {
     name: 'Rodilene Binay-an Ricardo',
@@ -62,17 +62,17 @@ const primaryMen = [
   {
     name: 'John-Mar I.  Diola',
     position: 'Primary Leader',
-    imgSrc: '/images/profile_placeholder.png'
+    imgSrc: 'logo.png'
   },
   {
     name: 'Romnick C. Sacla',
     position: 'Primary Leader',
-    imgSrc: '/images/profile_placeholder.png'
+    imgSrc: 'logo.png'
   },
   {
     name: 'Glen Mar O. Emilio',
     position: 'Primary Leader',
-    imgSrc: '/images/profile_placeholder.png'
+    imgSrc: 'logo.png'
   },
   {
     name: 'Angelito James S. Bustos',
@@ -82,7 +82,7 @@ const primaryMen = [
   {
     name: 'Maxson P. Battateng',
     position: 'Primary Leader',
-    imgSrc: '/images/profile_placeholder.png'
+    imgSrc: 'logo.png'
   },
   {
     name: 'Brix T. Gomintong',
@@ -97,7 +97,7 @@ const primaryMen = [
   {
     name: 'Lowie W.  Ngayodan',
     position: 'Primary Leader',
-    imgSrc: '/images/profile_placeholder.png'
+    imgSrc: 'logo.png'
   },
   {
     name: 'Jonel S. Uligan',
@@ -120,12 +120,12 @@ const primaryWomen = [
   {
     name: 'Krizyl Joy M. Saguibal',
     position: 'Primary Leader',
-    imgSrc: '/images/profile_placeholder.png'
+    imgSrc: 'logo.png'
   },
   {
     name: 'Denia B.Sacla',
     position: 'Primary Leader',
-    imgSrc: '/images/profile_placeholder.png'
+    imgSrc: 'logo.png'
   },
   {
     name: 'Asher Dianne M.Saguibal',
@@ -140,17 +140,17 @@ const primaryWomen = [
   {
     name: 'Evelyn E. Ngayodan',
     position: 'Primary Leader',
-    imgSrc: '/images/profile_placeholder.png'
+    imgSrc: 'logo.png'
   },
   {
     name: 'Imelda A. De Vera',
     position: 'Primary Leader',
-    imgSrc: '/images/profile_placeholder.png'
+    imgSrc: 'logo.png'
   },
   {
     name: 'Mae-Ann B. Pingaping',
     position: 'Primary Leader',
-    imgSrc: '/images/profile_placeholder.png'
+    imgSrc: 'logo.png'
   },
   {
     name: 'Jaysabel M. Calpo',
@@ -168,7 +168,7 @@ const staffs = [
   {
     name: 'Mae-Ann B. Pingaping',
     position: 'Church Administrator',
-    imgSrc: '/images/profile_placeholder.png'
+    imgSrc: 'logo.png'
   },
   {
     name: 'Jaysabel M. Calpo',

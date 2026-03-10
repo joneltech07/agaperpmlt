@@ -46,12 +46,12 @@
         <h2 class="text-2xl font-bold mb-10 text-center">MEET THE TEAM</h2>
         <div class="flex flex-col md:flex-row gap-4 md:gap-20 justify-center">
           <Image
-            src="/images/profile_placeholder.png"
+            src="logo.png"
             name="Denia B. Sacla"
             position="Department Head"
           />
           <Image
-            src="/images/profile_placeholder.png"
+            src="logo.png"
             name="Mae Ann Pingaping"
             position="Assistant"
           />

@@ -37,52 +37,52 @@
 <script setup lang="ts">
 const teams = [
   {
-    src: '/images/profile_placeholder.png',
+    src: 'logo.png',
     name: 'Brix Gomintong',
     position: 'Department Head'
   },
   {
-    src: '/images/profile_placeholder.png',
+    src: 'logo.png',
     name: 'Glenmar Emilio',
     position: 'Assistant'
   },
 	{
-		src: '/images/profile_placeholder.png',
+		src: 'logo.png',
 		name: 'Angelito James Bustos',
 		position: 'Driver'
 	},
 	{
-		src: '/images/profile_placeholder.png',
+		src: 'logo.png',
 		name: 'Jusam Ricardo',
 		position: 'Driver'
 	},
 	{
-		src: '/images/profile_placeholder.png',
+		src: 'logo.png',
 		name: 'Jerome Cabinta',
 		position: 'Driver'
 	},
 	{
-		src: '/images/profile_placeholder.png',
+		src: 'logo.png',
 		name: 'Juanito Ricardo Sr.',
 		position: 'Driver',
 	},
 	{
-		src: '/images/profile_placeholder.png',
+		src: 'logo.png',
 		name: 'Jonel Uligan',
 		position: 'Driver'
 	},
 	{
-		src: '/images/profile_placeholder.png',
+		src: 'logo.png',
 		name: 'Nathaniel Bucasan',
 		position: 'Driver'
 	},
 	{
-		src: '/images/profile_placeholder.png',
+		src: 'logo.png',
 		name: 'Gary Lingad',
 		position: 'Driver'
 	},
 	{
-		src: '/images/profile_placeholder.png',
+		src: 'logo.png',
 		name: 'Alester Uligan',
 		position: 'Driver'
 	}
