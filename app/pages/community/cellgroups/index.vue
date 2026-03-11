@@ -25,7 +25,7 @@
           :next="{ variant: 'solid' }"
           :items="images"
           :ui="{
-            item: 'basis-1/3 ps-0',
+            item: 'basis-full md:basis-1/3 ps-0',
             prev: 'sm:start-8',
             next: 'sm:end-8',
             container: 'ms-0'
@@ -93,14 +93,4 @@ const images = [
     alt: 'Cellgroup 11'
   }
 ];
-
-function onClickPrev () {
-  activeIndex.value =
-    activeIndex.value <= 0 ? images.length - 1 : activeIndex.value - 1
-}
-
-function onClickNext () {
-  activeIndex.value =
-    activeIndex.value >= images.length - 1 ? 0 : activeIndex.value + 1
-}
 </script>

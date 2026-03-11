@@ -14,12 +14,12 @@
 				<div class="flex items-center justify-center mt-10">
 					<UCarousel v-slot="{ item }" loop dots :autoplay="{ delay: 3000 }" wheel-gestures :prev="{ variant: 'solid' }"
 						:next="{ variant: 'solid' }" :items="images" :ui="{
-							item: 'basis-1/3 ps-0',
+							item: 'basis-full md:basis-1/3 ps-0',
 							prev: 'sm:start-8',
 							next: 'sm:end-8',
 							container: 'ms-0'
 						}">
-						<img :src="item.src" width="320" height="320" :alt="item.alt" class="object-cover w-100 h-80" />
+						<img :src="item.src" width="320" height="320" :alt="item.alt" class="object-cover w-full h-80" />
 					</UCarousel>
 				</div>
 			</section>
