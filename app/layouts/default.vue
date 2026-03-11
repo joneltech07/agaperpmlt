@@ -115,7 +115,7 @@ const items = computed<NavigationMenuItem[]>(() => [
 	},
 	{
 		label: 'Connect',
-		to: '/connect',
+		// to: '/connect',
 		active: route.path.startsWith('/connect'),
 		children: [
 			{
