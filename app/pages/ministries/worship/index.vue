@@ -2,9 +2,7 @@
   <section>
     <Banner title="Worship" background-image="/images/worship.jpg" />
 
-    <section
-      class="p-7 md:px-20 md:py-20 md:pb-40 pb-10 flex flex-col gap-10 items-center"
-    >
+    <Section>
       <p class="w-full md:w-200 text-center">
         Our Worship Team is dedicated to one singular mission: lifting high the
         name of the Lord through hymns and songs of praise. We believe that
@@ -48,17 +46,19 @@
             position="Department Head"
           />
           <Image
-            src="logo.png"
+            src="/images/portrait_placeholder.png"
             name="John Mar Diola"
             position="Music Director"
           />
         </div>
       </div>
-    </section>
+    </Section>
   </section>
 </template>
 
 <script setup lang="ts">
+import Section from '~/layouts/Section.vue';
+
 const verses = [
   {
     title: '2 Chronicles 5:13',
