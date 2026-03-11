@@ -1,94 +1,99 @@
 <template>
+  <Banner title="GET INVOLVED" />
 
-	<Banner title="GET INVOLVED" />
-
-	<div class="p-7 md:p-10 flex justify-center">
-		<div class="flex flex-wrap gap-4 justify-stretch w-full md:px-3 lg:px-15">
-			<CallToActionCard class="grow" v-for="value in callToActionItems" :key="value.title" :image-background="value.imageBackground">
-				<template #title>
-					{{ value.title }}
-				</template>
-				<template #description>
-					{{ value.description }}
-				</template>
-				<template #button-text>
-					<a :href="value.link"> Read More </a>
-				</template>
-			</CallToActionCard>
-		</div>
-	</div>
-
+  <div class="p-7 md:p-10 flex justify-center">
+    <div class="flex flex-wrap gap-4 justify-stretch w-full md:px-3 lg:px-15">
+      <CallToActionCard
+        class="grow"
+        v-for="value in callToActionItems"
+        :key="value.title"
+        :image-background="value.imageBackground"
+      >
+        <template #title>
+          {{ value.title }}
+        </template>
+        <template #description>
+          {{ value.description }}
+        </template>
+        <template #button-text>
+          <a class="flex gap-1 items-center justify-center p-2 px-5" :href="value.link">
+            <UIcon name="i-lucide-album" /> Learn More
+          </a>
+        </template>
+      </CallToActionCard>
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
-import CallToActionCard from '~/components/Home/CallToActionCard.vue';
+import CallToActionCard from '~/components/Home/CallToActionCard.vue'
 
 const callToActionItems = [
-	{
-		title: 'LCSOL',
-		description: 'LCSOL description',
-		imageBackground: '/images/sol.jpg',
-		link: '/ministries/sol'
-	},
-	{
-		title: 'Missions',
-		description: 'Explore our various ministries and missions.',
-		imageBackground: '/images/missions.jpg',
-		link: '/ministries/missions'
-	},
-	{
-		title: 'Intercessory',
-		description: 'Pray for the needs of our community and beyond.',
-		imageBackground: '/images/intercessory.jpg',
-		link: '/ministries/intercessory'
-	},
-	{
-		title: 'Media',
-		description: 'Stay updated with our latest sermons and events.',
-		imageBackground: '/images/media.jpg',
-		link: '/ministries/media'
-	},
-	{
-		title: 'Worship',
-		description: 'Join us in praising and worshiping God.',
-		imageBackground: '/images/worship.jpg',
-		link: '/ministries/worship'
-	},
-	{
-		title: 'Children',
-		description: 'Engage your children in a fun and safe environment.',
-		imageBackground: '/images/children.jpg',
-		link: '/ministries/children'
-	},
-	{
-		title: 'Sociable',
-		description: 'Connect and build relationships within our church community.',
-		imageBackground: '/images/sociable.jpg',
-		link: '/ministries/sociable'
-	},
-	{
-		title: 'Consolidation',
-		description: 'Strengthen your faith through our consolidation programs.',
-		imageBackground: '/images/consolidation.jpg',
-		link: '/ministries/consolidation'
-	},
-	{
-		title: 'Finance',
-		description: 'Support our church through financial contributions.',
-		// imageBackground: '/images/finance.jpg',
-		link: '/ministries/finance'
-	},
-	{
-		title: 'Kitchen',
-		description: 'Help us provide meals for those in need.',
-		imageBackground: '/images/kitchen.jpg',
-		link: '/ministries/kitchen'
-	},
-	{
-		title: 'Technical',
-		description: 'Assist with our technical needs during services and events.',
-		imageBackground: '/images/technical.jpg',
-		link: '/ministries/technical'
-	}
-];
+  {
+    title: 'LCSOL',
+    description: 'Learn about our LCSOL training and how you can get involved.',
+    imageBackground: '/images/sol.jpg',
+    link: '/ministries/sol'
+  },
+  {
+    title: 'Missions',
+    description: 'Explore our various ministries and missions.',
+    imageBackground: '/images/missions.jpg',
+    link: '/ministries/missions'
+  },
+  {
+    title: 'Intercessory',
+    description: 'Pray for the needs of our community and beyond.',
+    imageBackground: '/images/intercessory.jpg',
+    link: '/ministries/intercessory'
+  },
+  {
+    title: 'Media',
+    description: 'Stay updated with our latest sermons and events.',
+    imageBackground: '/images/media.jpg',
+    link: '/ministries/media'
+  },
+  {
+    title: 'Worship',
+    description: 'Join us in praising and worshiping God.',
+    imageBackground: '/images/worship.jpg',
+    link: '/ministries/worship'
+  },
+  {
+    title: 'Children',
+    description: 'Engage your children in a fun and safe environment.',
+    imageBackground: '/images/children.jpg',
+    link: '/ministries/children'
+  },
+  {
+    title: 'Sociable',
+    description: 'Connect and build relationships within our church community.',
+    imageBackground: '/images/sociable.jpg',
+    link: '/ministries/sociable'
+  },
+  {
+    title: 'Consolidation',
+    description: 'Strengthen your faith through our consolidation programs.',
+    imageBackground: '/images/consolidation.jpg',
+    link: '/ministries/consolidation'
+  },
+  {
+    title: 'Finance',
+    description: 'Support our church through financial contributions.',
+    // imageBackground: '/images/finance.jpg',
+    link: '/ministries/finance'
+  },
+  {
+    title: 'Kitchen',
+    description: 'Help us provide meals for those in need.',
+    imageBackground: '/images/kitchen.jpg',
+    link: '/ministries/kitchen'
+  },
+  {
+    title: 'Technical',
+    description: 'Assist with our technical needs during services and events.',
+    imageBackground: '/images/technical.jpg',
+    link: '/ministries/technical'
+  }
+]
 </script>
