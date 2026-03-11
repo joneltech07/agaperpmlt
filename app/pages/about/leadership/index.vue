@@ -14,14 +14,14 @@
         }"
       >
         <template #men>
-          <LeadersSection title="" :images="primaryMen" />
+          <LeadersSection title="" :images="primaryMen" style-prop="flex" />
         </template>
         <template #women>
-          <LeadersSection title="" :images="primaryWomen" />
+          <LeadersSection title="" :images="primaryWomen" style-prop="flex" />
         </template>
       </UTabs>
 
-      <LeadersSection title="Staff" :images="staffs" />
+      <LeadersSection title="Staff" :images="staffs" style-prop="flex" />
     </section>
   </section>
 </template>
@@ -44,7 +44,7 @@ const pastors = [
   {
     name: 'Juanito Ricardo Jr.',
     position: 'Senior Pastor',
-    imgSrc: 'logo.png'
+    imgSrc: '/images/portrait_placeholder.png'
   },
   {
     name: 'Rodilene Binay-an Ricardo',
@@ -62,17 +62,17 @@ const primaryMen = [
   {
     name: 'John-Mar I.  Diola',
     position: 'Primary Leader',
-    imgSrc: 'logo.png'
+    imgSrc: '/images/portrait_placeholder.png'
   },
   {
     name: 'Romnick C. Sacla',
     position: 'Primary Leader',
-    imgSrc: 'logo.png'
+    imgSrc: '/images/portrait_placeholder.png'
   },
   {
     name: 'Glen Mar O. Emilio',
     position: 'Primary Leader',
-    imgSrc: 'logo.png'
+    imgSrc: '/images/portrait_placeholder.png'
   },
   {
     name: 'Angelito James S. Bustos',
@@ -82,7 +82,7 @@ const primaryMen = [
   {
     name: 'Maxson P. Battateng',
     position: 'Primary Leader',
-    imgSrc: 'logo.png'
+    imgSrc: '/images/portrait_placeholder.png'
   },
   {
     name: 'Brix T. Gomintong',
@@ -97,7 +97,7 @@ const primaryMen = [
   {
     name: 'Lowie W.  Ngayodan',
     position: 'Primary Leader',
-    imgSrc: 'logo.png'
+    imgSrc: '/images/portrait_placeholder.png'
   },
   {
     name: 'Jonel S. Uligan',
@@ -120,12 +120,12 @@ const primaryWomen = [
   {
     name: 'Krizyl Joy M. Saguibal',
     position: 'Primary Leader',
-    imgSrc: 'logo.png'
+    imgSrc: '/images/portrait_placeholder.png'
   },
   {
     name: 'Denia B.Sacla',
     position: 'Primary Leader',
-    imgSrc: 'logo.png'
+    imgSrc: '/images/portrait_placeholder.png'
   },
   {
     name: 'Asher Dianne M.Saguibal',
@@ -140,17 +140,17 @@ const primaryWomen = [
   {
     name: 'Evelyn E. Ngayodan',
     position: 'Primary Leader',
-    imgSrc: 'logo.png'
+    imgSrc: '/images/portrait_placeholder.png'
   },
   {
     name: 'Imelda A. De Vera',
     position: 'Primary Leader',
-    imgSrc: 'logo.png'
+    imgSrc: '/images/portrait_placeholder.png'
   },
   {
     name: 'Mae-Ann B. Pingaping',
     position: 'Primary Leader',
-    imgSrc: 'logo.png'
+    imgSrc: '/images/portrait_placeholder.png'
   },
   {
     name: 'Jaysabel M. Calpo',
@@ -168,7 +168,7 @@ const staffs = [
   {
     name: 'Mae-Ann B. Pingaping',
     position: 'Church Administrator',
-    imgSrc: 'logo.png'
+    imgSrc: '/images/portrait_placeholder.png'
   },
   {
     name: 'Jaysabel M. Calpo',
