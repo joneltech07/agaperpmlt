@@ -14,7 +14,7 @@ useSeoMeta({
     'Agape Reaching People Ministries, Inc. (AGAPERPMLT) is a vibrant church community located in La Trinidad, Benguet. We are dedicated to spreading the love of Christ and serving our community through various ministries and outreach programs.',
   ogDescription:
     'Agape Reaching People Ministries, Inc. (AGAPERPMLT) is a vibrant church community located in La Trinidad, Benguet. We are dedicated to spreading the love of Christ and serving our community through various ministries and outreach programs.',
-  ogImage: 'agaperpmlt.vercel.app/images/hero1.jpg',
+  ogImage: 'https://agaperpmlt.vercel.app/images/hero1.jpg',
   twitterCard: 'summary_large_image'
 })
 </script>
