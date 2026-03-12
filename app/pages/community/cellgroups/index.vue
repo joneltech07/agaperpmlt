@@ -14,7 +14,7 @@
         that we truly live out our calling to be our brother's keeper.
       </p>
 
-      <div class="flex items-center justify-center mt-10">
+      <div class="flex items-center justify-center mt-10 mb-20">
         <UCarousel
           v-slot="{ item }"
           loop

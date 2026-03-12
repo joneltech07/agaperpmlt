@@ -9,7 +9,7 @@
         involvements.
       </p>
 
-      <div class="flex items-center justify-center mt-10">
+      <div class="flex items-center justify-center mt-10 mb-20">
         <UCarousel
           class="w-full"
           v-slot="{ item }"
