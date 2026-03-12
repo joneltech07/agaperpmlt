@@ -7,7 +7,7 @@
         <EventCard
           v-for="event in events"
           :key="event.title"
-          customClass="w-70"
+          customClass="w-full md:w-70"
           :event="event"
         />
       </div>
