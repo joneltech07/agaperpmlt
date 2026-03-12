@@ -1,5 +1,5 @@
 <template>
-  <Banner title="FIND COMMUNITY" />
+  <Banner title="FIND COMMUNITY" background-image="/images/community.jpg" />
 
   <div class="p-7 md:p-10 flex justify-center">
     <div class="flex flex-wrap gap-4 justify-stretch w-full md:px-3 lg:px-15">

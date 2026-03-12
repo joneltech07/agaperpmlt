@@ -50,7 +50,7 @@ const callToActionItems = [
     title: 'Community',
     description: 'Connect with others in our church family.',
     imageBackground: '/images/community.jpg',
-    link: '/events'
+    link: '/community'
   }
 ]
 </script>

@@ -92,7 +92,7 @@ const callToActionItems = [
   {
     title: 'Technical',
     description: 'Assist with our technical needs during services and events.',
-    imageBackground: '/images/technical.jpg',
+    // imageBackground: 'https://placehold.co/600x400/EEE/31343C',
     link: '/ministries/technical'
   }
 ]

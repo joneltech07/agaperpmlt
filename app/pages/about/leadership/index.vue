@@ -9,19 +9,26 @@
         class="mt-10"
         :items="leadersTab"
         :ui="{
-          list: 'w-full md:w-100', // Width of the whole tab container (e.g., w-full, w-auto)
-          trigger: 'min-w-fit' // Width of each tab button (e.g., w-1/2, w-20, min-w-fit)
+          list: 'w-full md:w-150', // Width of the whole tab container (e.g., w-full, w-auto)
+          trigger: 'min-w-50' // Width of each tab button (e.g., w-1/2, w-20, min-w-fit)
         }"
       >
         <template #men>
-          <LeadersSection title="" :images="primaryMen" style-prop="flex" />
+          <LeadersSection
+            title=""
+            :images="primaryMen.sort((a, b) => a.name.localeCompare(b.name))"
+            style-prop="flex"
+          />
         </template>
         <template #women>
-          <LeadersSection title="" :images="primaryWomen" style-prop="flex" />
+          <LeadersSection title="" :images="primaryWomen.sort((a, b) => a.name.localeCompare(b.name))" style-prop="flex" />
+        </template>
+        <template #staffs>
+          <LeadersSection title="" :images="staffs.sort((a, b) => a.name.localeCompare(b.name))" style-prop="flex" />
         </template>
       </UTabs>
 
-      <LeadersSection title="Staff" :images="staffs" style-prop="flex" />
+      <!-- <LeadersSection title="Staff" :images="staffs" style-prop="flex" /> -->
     </section>
   </section>
 </template>
@@ -37,6 +44,11 @@ const leadersTab = [
     label: 'Primary Women',
     icon: 'i-lucide-female',
     slot: 'women'
+  },
+  {
+    label: 'Staffs',
+    icon: 'i-lucide-users',
+    slot: 'staffs'
   }
 ]
 
@@ -72,7 +84,7 @@ const primaryMen = [
   {
     name: 'Glen Mar O. Emilio',
     position: 'Primary Leader',
-    imgSrc: '/images/portrait_placeholder.png'
+    imgSrc: '/images/leaders/glenmar_emilio.jpg'
   },
   {
     name: 'Angelito James S. Bustos',
@@ -125,7 +137,7 @@ const primaryWomen = [
   {
     name: 'Denia B.Sacla',
     position: 'Primary Leader',
-    imgSrc: '/images/portrait_placeholder.png'
+    imgSrc: '/images/leaders/denia_sacla.jpg'
   },
   {
     name: 'Asher Dianne M.Saguibal',
@@ -150,7 +162,7 @@ const primaryWomen = [
   {
     name: 'Mae-Ann B. Pingaping',
     position: 'Primary Leader',
-    imgSrc: '/images/portrait_placeholder.png'
+    imgSrc: '/images/leadership/mae_ann_pingaping.jpg'
   },
   {
     name: 'Jaysabel M. Calpo',
@@ -168,7 +180,7 @@ const staffs = [
   {
     name: 'Mae-Ann B. Pingaping',
     position: 'Church Administrator',
-    imgSrc: '/images/portrait_placeholder.png'
+    imgSrc: '/images/leadership/mae_ann_pingaping.jpg'
   },
   {
     name: 'Jaysabel M. Calpo',
