@@ -20,6 +20,7 @@
     "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3",
     "vue": "^3.5.27",
+    "vue-cal": "^5.0.1-rc.40",
     "vue-router": "^4.6.4"
   },
   "devDependencies": {
