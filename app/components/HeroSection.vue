@@ -21,7 +21,7 @@
         width="320"
         height="320"
         :alt="item.alt"
-        class="object-cover w-full h-70 md:h-200 opacity-50 select-none pointer-events-none"
+        class="object-cover w-full h-70 md:h-167.5 opacity-50 select-none pointer-events-none"
         draggable="false"
         ondragstart="return false;"
       />
