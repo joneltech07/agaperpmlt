@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import CallToActionSection from '~/components/Home/CallToActionSection.vue'
+import ChurchIntroSection from '~/components/Home/ChurchIntroSection.vue'
 import UpcomingEventsSection from '~/components/Home/UpcomingEventsSection.vue'
 </script>
 
