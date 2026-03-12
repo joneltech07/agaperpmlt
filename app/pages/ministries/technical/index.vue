@@ -20,7 +20,9 @@
 
       <div class="w-full">
         <h2 class="text-2xl font-bold mb-10 text-center">MEET THE TEAM</h2>
-        <div class="flex flex-col flex-wrap md:flex-row gap-4 md:gap-20 justify-center">
+        <div
+          class="flex flex-col flex-wrap md:flex-row gap-4 md:gap-20 justify-center"
+        >
           <Image
             v-for="(team, idx) in teams"
             :key="idx"
@@ -37,54 +39,54 @@
 <script setup lang="ts">
 const teams = [
   {
-    src: 'logo.png',
+    src: '/images/leaders/brix_gomintong.png',
     name: 'Brix Gomintong',
     position: 'Department Head'
   },
   {
-    src: 'logo.png',
+    src: '/images/portrait_placeholder.png',
     name: 'Glenmar Emilio',
     position: 'Assistant'
   },
-	{
-		src: 'logo.png',
-		name: 'Angelito James Bustos',
-		position: 'Driver'
-	},
-	{
-		src: 'logo.png',
-		name: 'Jusam Ricardo',
-		position: 'Driver'
-	},
-	{
-		src: 'logo.png',
-		name: 'Jerome Cabinta',
-		position: 'Driver'
-	},
-	{
-		src: 'logo.png',
-		name: 'Juanito Ricardo Sr.',
-		position: 'Driver',
-	},
-	{
-		src: 'logo.png',
-		name: 'Jonel Uligan',
-		position: 'Driver'
-	},
-	{
-		src: 'logo.png',
-		name: 'Nathaniel Bucasan',
-		position: 'Driver'
-	},
-	{
-		src: 'logo.png',
-		name: 'Gary Lingad',
-		position: 'Driver'
-	},
-	{
-		src: 'logo.png',
-		name: 'Alester Uligan',
-		position: 'Driver'
-	}
-];
+  {
+    src: '/images/leaders/james_bustos.jpeg',
+    name: 'Angelito James Bustos',
+    position: 'Driver'
+  },
+  {
+    src: '/images/portrait_placeholder.png',
+    name: 'Jusam Ricardo',
+    position: 'Driver'
+  },
+  {
+    src: '/images/leaders/jerome_cabinta.JPG',
+    name: 'Jerome Cabinta',
+    position: 'Driver'
+  },
+  {
+    src: '/images/portrait_placeholder.png',
+    name: 'Juanito Ricardo Sr.',
+    position: 'Driver'
+  },
+  {
+    src: '/images/leaders/jonel_uligan_media_assistant.png',
+    name: 'Jonel Uligan',
+    position: 'Driver'
+  },
+  {
+    src: '/images/portrait_placeholder.png',
+    name: 'Nathaniel Bucasan',
+    position: 'Driver'
+  },
+  {
+    src: '/images/leaders/gary_lingad.jpg',
+    name: 'Gary Lingad',
+    position: 'Driver'
+  },
+  {
+    src: '/images/portrait_placeholder.png',
+    name: 'Alester Uligan',
+    position: 'Driver'
+  }
+]
 </script>
