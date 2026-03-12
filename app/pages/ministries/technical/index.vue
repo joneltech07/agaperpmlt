@@ -44,7 +44,7 @@ const teams = [
     position: 'Department Head'
   },
   {
-    src: '/images/portrait_placeholder.png',
+    src: '/images/leaders/glenmar_emilio.jpg',
     name: 'Glenmar Emilio',
     position: 'Assistant'
   },
