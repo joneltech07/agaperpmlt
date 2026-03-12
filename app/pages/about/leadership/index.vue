@@ -10,7 +10,7 @@
         :items="leadersTab"
         :ui="{
           list: 'w-full md:w-150', // Width of the whole tab container (e.g., w-full, w-auto)
-          trigger: 'min-w-50' // Width of each tab button (e.g., w-1/2, w-20, min-w-fit)
+          trigger: 'w-10 md:w-50 text-center' // Width of each tab button (e.g., w-1/2, w-20, min-w-fit)
         }"
       >
         <template #men>
@@ -21,10 +21,18 @@
           />
         </template>
         <template #women>
-          <LeadersSection title="" :images="primaryWomen.sort((a, b) => a.name.localeCompare(b.name))" style-prop="flex" />
+          <LeadersSection
+            title=""
+            :images="primaryWomen.sort((a, b) => a.name.localeCompare(b.name))"
+            style-prop="flex"
+          />
         </template>
         <template #staffs>
-          <LeadersSection title="" :images="staffs.sort((a, b) => a.name.localeCompare(b.name))" style-prop="flex" />
+          <LeadersSection
+            title=""
+            :images="staffs.sort((a, b) => a.name.localeCompare(b.name))"
+            style-prop="flex"
+          />
         </template>
       </UTabs>
 
@@ -36,18 +44,18 @@
 <script setup lang="ts">
 const leadersTab = [
   {
-    label: 'Primary Men',
-    icon: 'i-lucide-male',
+    label: 'Men',
+    // icon: 'i-lucide-male',
     slot: 'men'
   },
   {
-    label: 'Primary Women',
-    icon: 'i-lucide-female',
+    label: 'Women',
+    // icon: 'i-lucide-female',
     slot: 'women'
   },
   {
     label: 'Staffs',
-    icon: 'i-lucide-users',
+    // icon: 'i-lucide-users',
     slot: 'staffs'
   }
 ]
