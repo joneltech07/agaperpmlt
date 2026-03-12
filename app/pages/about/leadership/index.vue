@@ -170,7 +170,7 @@ const primaryWomen = [
   {
     name: 'Mae-Ann B. Pingaping',
     position: 'Primary Leader',
-    imgSrc: '/images/leadership/mae_ann_pingaping.jpg'
+    imgSrc: '/images/leaders/mae_ann_pingaping.jpg'
   },
   {
     name: 'Jaysabel M. Calpo',
@@ -188,7 +188,7 @@ const staffs = [
   {
     name: 'Mae-Ann B. Pingaping',
     position: 'Church Administrator',
-    imgSrc: '/images/leadership/mae_ann_pingaping.jpg'
+    imgSrc: '/images/leaders/mae_ann_pingaping.jpg'
   },
   {
     name: 'Jaysabel M. Calpo',
