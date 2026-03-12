@@ -36,6 +36,7 @@
 
       <NuxtLink
         :to="event.link"
+				target="_blank"
         class="rounded bg-white shadow px-3 py-2 text-slate-700 flex items-center justify-center gap-1 font-bold text-xs self-stretch md:self-start"
       >
         <UIcon name="i-lucide-external-link" class="inline-block" /> Learn More
