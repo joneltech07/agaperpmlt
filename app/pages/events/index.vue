@@ -1,6 +1,6 @@
 <template>
   <section>
-    <Banner title="AGAPERPMLT Events" />
+    <Banner title="Agape Events" background-image="/images/events.jpg" />
 
     <Section>
       <FeaturedEvents />
