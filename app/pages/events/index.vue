@@ -28,8 +28,11 @@
 import Section from '~/layouts/Section.vue'
 import { VueCal } from 'vue-cal'
 import 'vue-cal/style'
+import { useThemeStore } from '~/store/theme'
 
-const { isDark } = useTheme()
+const theme = useThemeStore()
+
+const isDark = computed(() => theme.isDark)
 </script>
 
 <style scoped>
