@@ -31,7 +31,7 @@
       class="flex flex-col absolute w-full top-30 left-1/2 md:top-1/2 md:left-1/2 transform -translate-x-1/2 md:-translate-y-1/2 text-white text-center text-shadow-lg"
     >
       <h1 class="font-poppins text-2xl md:text-5xl font-bold">
-        AGAPE REACHING PEOPLE MINISTRY
+        AGAPE REACHING PEOPLE MINISTRIES INC.
       </h1>
       <p class="text-md md:text-xl font-semibold">
         Loving God • Loving People • Reach the World
