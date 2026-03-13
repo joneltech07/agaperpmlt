@@ -4,7 +4,7 @@ export const events = [
 		location: 'Rosario',
 		date: 'Saturday, March 14, 2026',
 		image: {
-			src: 'logo.png',
+			src: '/images/events/women_fellowship.png',
 			alt: "Women's Fellowship"
 		},
 		start: new Date(new Date('2026-03-14').setHours(10, 30, 0, 0)),
@@ -16,7 +16,7 @@ export const events = [
 		location: 'Cuneta Astrodome',
 		date: 'Saturday, March 14, 2026',
 		image: {
-			src: 'logo.png',
+			src: '/images/events/men_convention.png',
 			alt: "Men's Convention 2026"
 		},
 		link: 'https://www.facebook.com/arpmbenguetph',
@@ -28,7 +28,7 @@ export const events = [
 		location: 'La Trinidad, Benguet',
 		date: 'Sunday, March 15, 2026',
 		image: {
-			src: 'logo.png',
+			src: '/images/sol.jpg',
 			alt: 'LCSOL Moving Up'
 		},
 		link: 'https://www.facebook.com/arpmbenguetph',
