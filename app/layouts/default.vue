@@ -194,7 +194,7 @@ const items = computed<NavigationMenuItem[]>(() => [
 					<p>JC065 PICO, KM.5, La Trinidad, Benguet</p>
 				</div>
 				<p class="text-muted text-sm text-center">Copyright © {{ new Date().getFullYear() }} Agape Reaching
-					People Ministry La Trinidad</p>
+					People Ministries Inc. - La Trinidad</p>
 			</div>
 
 			<template #right>
