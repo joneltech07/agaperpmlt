@@ -64,7 +64,7 @@ const pastors = [
   {
     name: 'Juanito Ricardo Jr.',
     position: 'Senior Pastor',
-    imgSrc: '/images/portrait_placeholder.png'
+    imgSrc: '/images/leaders/juanito_ricardo_jr.jpg'
   },
   {
     name: 'Rodilene Binay-an Ricardo',
