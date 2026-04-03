@@ -4,8 +4,8 @@
     <div
       :class="
         styleProp === 'grid'
-          ? 'grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-5 md:gap-10'
-          : 'grid grid-cols-2 md:flex md:flex-wrap gap-5 justify-center'
+          ? 'grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-5 md:gap-10'
+          : 'grid grid-cols-1 md:flex md:flex-wrap gap-5 justify-center'
       "
     >
       <Image
